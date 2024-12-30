@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Cabin:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dosis:wght@200..800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Imperial+Script&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rouge+Script&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tulpen+One&display=swap');
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #c1c1c1;
+    width: 250px;
+    height: 300px;
+    border-radius: 8px;
+
+    font-family: Kanit;
+    font-size: 25px;
+
+    position: relative;
+}
+
+.timer {
+    h1 {
+        margin-bottom: 15px;
+        color: #3d3d3d;
+        opacity: 80%;
+    }
+}
+
+.btn {
+    button {
+        width: 100px;
+        height: 40px;
+        border: 1px solid #777;
+        border-radius: 5px;
+        font-family: Kanit;
+        cursor: pointer;
+
+        position: absolute;
+        bottom: 20px;
+        left: 75px;
+
+        transition: all 250ms;
+    }
+
+    .stop {
+        background-color: rgb(239, 17, 17);
+    }
+    .restart {
+        background-color: rgb(61, 180, 61);
+    }
+}
+
+.btn .stop:hover {
+    scale: 1.07;
+    box-shadow: 0 0 10px rgb(239, 17, 17);
+}
+.btn .restart:hover {
+    scale: 1.07;
+    box-shadow: 0 0 10px rgb(61, 180, 61);
+}
